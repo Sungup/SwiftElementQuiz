@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="4AC-J4-TuJ">
-                                <rect key="frame" x="84" y="107.5" width="152.5" height="265"/>
+                                <rect key="frame" x="84" y="100.5" width="152.5" height="279.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lVF-EV-9eV" userLabel="Element Image">
                                         <rect key="frame" x="6" y="0.0" width="140" height="140"/>
@@ -28,21 +28,32 @@
                                             <constraint firstAttribute="height" constant="140" id="XnT-GQ-l6u"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWK-NO-OjU" userLabel="Answer Label">
-                                        <rect key="frame" x="0.0" y="152" width="152.5" height="29"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oRl-Dg-XxW">
+                                        <rect key="frame" x="0.0" y="152" width="152.5" height="43.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWK-NO-OjU" userLabel="Answer Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="152.5" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chemical Weight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lv-SW-bAX">
+                                                <rect key="frame" x="28" y="29" width="96" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-LU-gsZ">
-                                        <rect key="frame" x="29.5" y="193" width="93" height="30"/>
+                                        <rect key="frame" x="29.5" y="207.5" width="93" height="30"/>
                                         <state key="normal" title="Show Answer"/>
                                         <connections>
                                             <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uih-3J-NiH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpe-Gl-nBB">
-                                        <rect key="frame" x="30" y="235" width="92" height="30"/>
+                                        <rect key="frame" x="30" y="249.5" width="92" height="30"/>
                                         <state key="normal" title="Next Element"/>
                                         <connections>
                                             <action selector="gotoNextElement:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THy-C0-aoY"/>
@@ -59,7 +70,8 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="answerLabel" destination="OWK-NO-OjU" id="iWu-BD-jrX"/>
+                        <outlet property="answerLabel" destination="OWK-NO-OjU" id="mdv-aI-UP0"/>
+                        <outlet property="chemicalWeight" destination="8lv-SW-bAX" id="nH4-Oi-1d8"/>
                         <outlet property="imageView" destination="lVF-EV-9eV" id="pUf-Ui-yjC"/>
                     </connections>
                 </viewController>

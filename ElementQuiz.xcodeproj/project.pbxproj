@@ -12,6 +12,7 @@
 		F8A517C7220AA6BD00099E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A517C5220AA6BD00099E2D /* Main.storyboard */; };
 		F8A517C9220AA6BF00099E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A517C8220AA6BF00099E2D /* Assets.xcassets */; };
 		F8A517CC220AA6BF00099E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A517CA220AA6BF00099E2D /* LaunchScreen.storyboard */; };
+		F8A517D8220AABD200099E2D /* ChemicalElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A517D7220AABD200099E2D /* ChemicalElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F8A517C8220AA6BF00099E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A517CB220AA6BF00099E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A517CD220AA6BF00099E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A517D7220AABD200099E2D /* ChemicalElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChemicalElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		F8A517D4220AA73E00099E2D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F8A517D7220AABD200099E2D /* ChemicalElement.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			files = (
 				F8A517C4220AA6BD00099E2D /* ViewController.swift in Sources */,
 				F8A517C2220AA6BD00099E2D /* AppDelegate.swift in Sources */,
+				F8A517D8220AABD200099E2D /* ChemicalElement.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

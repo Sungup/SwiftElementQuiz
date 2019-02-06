@@ -54,14 +54,46 @@
 		F8A517C0220AA6BD00099E2D /* ElementQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				F8A517C1220AA6BD00099E2D /* AppDelegate.swift */,
-				F8A517C3220AA6BD00099E2D /* ViewController.swift */,
-				F8A517C5220AA6BD00099E2D /* Main.storyboard */,
+				F8A517D6220AA76500099E2D /* UI */,
 				F8A517C8220AA6BF00099E2D /* Assets.xcassets */,
-				F8A517CA220AA6BF00099E2D /* LaunchScreen.storyboard */,
-				F8A517CD220AA6BF00099E2D /* Info.plist */,
+				F8A517D5220AA74400099E2D /* Controllers */,
+				F8A517D4220AA73E00099E2D /* Model */,
+				F8A517D3220AA72500099E2D /* Support Files */,
 			);
 			path = ElementQuiz;
+			sourceTree = "<group>";
+		};
+		F8A517D3220AA72500099E2D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8A517C1220AA6BD00099E2D /* AppDelegate.swift */,
+				F8A517CD220AA6BF00099E2D /* Info.plist */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
+		F8A517D4220AA73E00099E2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F8A517D5220AA74400099E2D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F8A517C3220AA6BD00099E2D /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F8A517D6220AA76500099E2D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F8A517C5220AA6BD00099E2D /* Main.storyboard */,
+				F8A517CA220AA6BF00099E2D /* LaunchScreen.storyboard */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
